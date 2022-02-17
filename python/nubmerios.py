@@ -1,4 +1,7 @@
 # Käyttäjä kirjoittaa numeron ja numero muuttuu tietyn funktion mukaan, jota käyttäjä ei tiedä.
+from tkinter import Y
+
+
 def numeroita():
    import time
    number = input("Annappa joku numero. Älä muute postaa negatiivisii numeroit, nollaa tai ygöstä")
@@ -105,31 +108,45 @@ def laskin():
    mkysymys = input("Matemaattinen toimitus: [nj] neliöjuuri, [k] kertoma, [s] sini, [c] kosini, [t] tangentti, [ar] asteet radiaaneiksi, [ra] radiaanit asteiksi.")
    if mkysymys == "nj":
       njkys = input("Sijoita luku, jonka neliöjuuren haluat ratkaista: ")
+      njkys = int(njkys)
       print(math.sqrt(njkys))
    elif mkysymys == "k":
       kkys = input("Sijoita luku, jonka kertoman haluat ratkaista: ")
+      kkys = int(kkys)
       print(math.factorial(kkys))
    elif mkysymys == "s":
       skys = input("Sijoita luku, jonka sinin haluat ratkaista: ")
+      skys = int(skys)
       print(math.sin(skys))
    elif mkysymys == "c":
       ckys = input("Sijoita luku, jonka kosinin haluat ratkaista: ")
+      ckys = int(ckys)
       print(math.cos(ckys))
    elif mkysymys == "t":
       tkys = input("Sijoita lunku, jonka tangentin haluat ratkaista: ")
+      tkys = int(tkys)
       print(math.tan(tkys))
    elif mkysymys == "ar":
       arkys = input("Sijoita luku, jonka haluat muuttaa asteista radiaaneiksi: ")
-      print(math.degrees(arkys))
+      arkys = int(arkys)
+      print(math.radians(arkys))
    elif mkysymys == "ra":
       rakys = input("Sijoita luku, jonka haluat muuttaa radiaaneista asteiksi: ")
-      print(math.radians(rakys))
-   
+      rakys = int(rakys)
+      print(math.degrees(rakys))
 
+def testi():
+   import math
+   kkyyss = input("Numero: ")
+   kkyyss = int(kkyyss)
+   print(math.sqrt(kkyyss))
+   
 def aky():
    akysymys = input("Kirjautuminen [k], numerot [n], nimi [ni], laskin [l] vai numeroarvaus [na]?")
    if akysymys == "k":
       kirjautu()
+   elif akysymys == "t":
+      testi()
    elif akysymys == "n":
       numeroita()
    elif akysymys == "l":
