@@ -8,16 +8,15 @@ public class Main {
 	static int step;
 	
 	public static void main(String[] args) {
-		lower = 0;
-		upper = 300;
-		step = 20;		
+		lower = 0; //alin mahdollinen
+		upper = 300; //ylin mahdollinen
+		step = 20; //askelväli
 		fahr = lower;
 		
-		while (fahr <= upper) {
+		while (fahr <= upper && fahr >= lower) {
 			celsius = 5 * (fahr-32) / 9;
 			System.out.println(fahr + "   " + celsius);	
 			fahr = fahr + step;
 		}
 	}
-
 }
