@@ -102,7 +102,7 @@ def nimi(fname, lname):
    for letter in fname:
       print(letter)
 
-# Tää on rikki, tein koko jutun ilman mitään testausta :D:D:D
+# Laskin, jossa ei ole perustoimintoja, kuten yhteenlaskua tai kertolaskua :D
 def laskin():
    import math
    mkysymys = input("Matemaattinen toimitus: [nj] neliöjuuri, [k] kertoma, [s] sini, [c] kosini, [t] tangentti, [ar] asteet radiaaneiksi, [ra] radiaanit asteiksi.")
