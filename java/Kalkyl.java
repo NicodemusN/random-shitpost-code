@@ -69,7 +69,7 @@ public class Kalkyl {
 		} else if (in.equals(tan)) {
 			System.out.println("Syötä luku, jonka tangentin haluat.");
 			double in1 = sc.nextDouble();
-			double tanD = Math.sin(in1);
+			double tanD = Math.tan(in1);
 			System.out.println(tanD);
 		} else if (in.equals(ar)) {
 			System.out.println("Syötä asteluku, jonka haluat radiaaneiksi.");
