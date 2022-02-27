@@ -1,5 +1,5 @@
 # random-shitpost-code
-For Nicodemus, Memel and Luukasa.
+For Nicodemus, Memel and Luuksa.
 
 This file has ligma
 
