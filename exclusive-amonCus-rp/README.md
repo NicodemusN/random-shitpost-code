@@ -1,1 +1,1 @@
-it will be done, it shall be done.
+it won't be done, it shall not be done.
