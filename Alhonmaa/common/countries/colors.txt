@@ -1,0 +1,4 @@
+ALH = {
+  color = rgb { 20  255  228 }
+  color_ui = rgb { 20  255  228 }
+}
